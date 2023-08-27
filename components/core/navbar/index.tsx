@@ -45,9 +45,9 @@ const wordmarkSvg = `<svg width="313" height="100" viewBox="0 0 313 100" fill="n
 `;
 
 const ROUTES = [
-  { href: "https://june.so/customer-stories", title: "Customers", type: "external-link" },
-  { href: "https://june.so/pricing", title: "Pricing", type: "external-link" },
-  { href: "/", title: "Changelog", type: "internal-link" },
+  {  },
+  { },
+  {},
 ] as const;
 
 interface NavbarProps {
@@ -98,7 +98,7 @@ function Navbar(props: NavbarProps) {
         >
           <Flex direction="column">
             <Flex align="center" justify="space-between">
-              <Flex p={4} as="a" href="https://june.so/">
+              <Flex p={4} as="a" href="https://www.bodybrain.ai/">
                 <NextImage
                   height={48}
                   width={48}
@@ -181,11 +181,11 @@ function Navbar(props: NavbarProps) {
               setShowLogoMenu(!showLogoMenu);
             }}
           >
-            <Link href="https://june.so/" passHref prefetch={false}>
+            <Link href="https://www.bodybrain.ai/" passHref prefetch={false}>
               <NextResponsiveImage
                 display={["none", "none", "block"]}
-                src="/june-3.0-logo.svg"
-                alt="June's logo"
+                src="/bodybrain-logo.svg"
+                alt="BodyBrainAI logo"
                 width={["100px"]}
                 height={["32px"]}
                 cursor="pointer"
@@ -207,10 +207,10 @@ function Navbar(props: NavbarProps) {
                       color: "white",
                     })}
                   >
-                    Features
+                    
                   </Text>
                   <ChevronDownIcon
-                    boxSize={[5]}
+                    boxSize={[0]}
                     {...(props.mode === "dark" && {
                       color: "white",
                     })}
@@ -237,7 +237,7 @@ function Navbar(props: NavbarProps) {
                           color="landing.almostBlack.500"
                           _hover={{ color: "primary", cursor: "pointer" }}
                           as="a"
-                          href="https://june.so/"
+                          href="https://www.bodybrain.ai"
                         >
                           Product Analytics
                         </Text>
@@ -317,31 +317,13 @@ function Navbar(props: NavbarProps) {
                 variant="landingGradient"
                 href={process.env.JUNE_APP_HOST}
               >
-                Dashboard
+                
               </Button>
             ) : (
               <>
-                <Button
-                  as="a"
-                  size="landingMd"
-                  variant="landingOutline"
-                  href={`${process.env.JUNE_APP_HOST}/login`}
-                  {...(props.mode === "dark" && {
-                    variant: "landingOutlineDark",
-                  })}
-                >
-                  Login
-                </Button>
+
                 <div>
-                  <Button
-                    className="g-conversion-button"
-                    as="a"
-                    size="landingMd"
-                    variant="landingGradient"
-                    href={`${process.env.JUNE_APP_HOST}/start`}
-                  >
-                    Sign up
-                  </Button>
+ 
                   {/* Google one-tap */}
                   <div
                     id="g_id_onload"
@@ -358,6 +340,5 @@ function Navbar(props: NavbarProps) {
       </Container>
     </>
   );
-}
-
+} 
 export default Navbar;

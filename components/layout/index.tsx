@@ -23,20 +23,20 @@ export default function Layout({ children }: ILayoutProps) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Discover new updates and improvements to June." />
-        <meta name="image" content="https://changelog.june.so/social.png" />
+        <meta name="image" content="https://changelog.bodybrain.ai/social.png" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://changelog.june.so" />
+        <meta property="og:url" content="https://changelog.bodybrain.ai" />
         <meta property="og:description" content="Discover new updates and improvements to June." />
-        <meta property="og:image" content="https://changelog.june.so/social.png" />
+        <meta property="og:image" content="https://changelog.bodybrain.ai/social.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://changelog.june.so" />
+        <meta name="twitter:url" content="https://changelog.bodybrain.ai" />
         <meta name="twitter:description" content="Discover new updates and improvements to June." />
-        <meta name="twitter:image" content="https://changelog.june.so/social.png" />
+        <meta name="twitter:image" content="https://changelog.bodybrain.ai/social.png" />
         <link
           rel="alternate"
           type="application/rss+xml"
           title="June Changelog"
-          href="https://changelog.june.so/rss.xml"
+          href="https://changelog.bodybrain.ai/rss.xml"
         />
       </Head>
       <motion.div initial="hidden" animate="visible">
@@ -74,7 +74,7 @@ export default function Layout({ children }: ILayoutProps) {
                   {!isInBlogPage && (
                     <VStack alignItems="start" width="100%">
                       <Text fontSize="xl" color="gray.700" textAlign={"start"}>
-                        The latest from June
+                        The latest from BodyBrainAI
                       </Text>
                       <Heading as="h1" fontSize={["5xl"]} color="black" textAlign={"start"}>
                         Changelog
