@@ -33,6 +33,7 @@ const config = withPlugins(
       {
         // optimisation disabled by default, to enable check https://github.com/cyrilwanner/next-optimized-images
         optimizeImages: false,
+
       },
     ],
     [

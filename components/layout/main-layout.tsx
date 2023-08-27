@@ -33,7 +33,7 @@ export const MainLayout = ({
 }: MainLayoutProps) => {
   const metaTitle = `${
     infiniteScrollingView ? "" : page > 0 ? `Page ${page} -` : ""
-  } June Changelog`;
+  } BodyBrainAI Changelog`;
   const timeline = useTimelineStore();
   const { animatePage, setAnimatePage } = useAnimatePageStore();
   const router = useRouter();
@@ -74,7 +74,7 @@ export const MainLayout = ({
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="June Changelog"
+          title="BodyBrainAI Changelog"
           href="https://changelog.june.so/rss.xml"
         />
       </Head>

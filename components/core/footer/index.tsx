@@ -69,11 +69,7 @@ export function Footer(props: FooterProps) {
         <GridItem gridArea="company">
           <VStack align="start" spacing={LINK_GAPS}>
            
-              mode={props.mode}
-              title="Changelog"
-              type="external"
-              href="https://changelog.june.so"
-            />
+            
             
           </VStack>
         </GridItem>
@@ -85,10 +81,7 @@ export function Footer(props: FooterProps) {
               
             </VStack>
             
-            <FooterLink
-              mode={props.mode}
-              type="text"
-            />
+            
           </VStack>
         </GridItem>
         <GridItem display={["block", "block", "none"]}>

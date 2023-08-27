@@ -63,9 +63,9 @@ export interface MdxLayoutProps {
 }
 
 export const MdxLayout = (props: MdxLayoutProps) => {
-  const title = `${props.meta.title} | June Changelog`;
-  const description = "Discover new updates and improvements to June.";
-  const url = "https://changelog.june.so";
+  const title = `${props.meta.title} | BodyBrainAI Changelog`;
+  const description = "Discover new updates and improvements to BodyBrainAI.";
+  const url = "https://changelog.bodybrain.ai";
 
   const router = useRouter();
   React.useLayoutEffect(() => {
@@ -132,7 +132,7 @@ export const MdxLayout = (props: MdxLayoutProps) => {
           <link
             rel="alternate"
             type="application/rss+xml"
-            title="June Changelog"
+            title="BodyBrainAI Changelog"
             href="https://changelog.june.so/rss.xml"
           />
         </Head>
