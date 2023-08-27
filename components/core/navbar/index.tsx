@@ -102,7 +102,7 @@ function Navbar(props: NavbarProps) {
                 <NextImage
                   height={48}
                   width={48}
-                  src="/june-logo-symbol-only.svg"
+                  src="/bodybrain-logo.svg"
                   alt="june-logo"
                 />
               </Flex>
@@ -184,7 +184,7 @@ function Navbar(props: NavbarProps) {
             <Link href="https://june.so/" passHref prefetch={false}>
               <NextResponsiveImage
                 display={["none", "none", "block"]}
-                src="/june-3.0-logo.svg"
+                src="/bodybrain-logo.svg"
                 alt="June's logo"
                 width={["100px"]}
                 height={["32px"]}
